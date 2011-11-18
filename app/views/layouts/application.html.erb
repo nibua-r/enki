@@ -9,6 +9,7 @@
   <%= javascript_include_tag 'jquery' %>
   <%= javascript_include_tag 'rails' %>
   <%= javascript_include_tag 'prettify' %>
+  <%= javascript_include_tag 'https://apis.google.com/js/plusone.js' %>
   <%= open_id_delegation_link_tags(enki_config[:open_id_delegation, :server], enki_config[:open_id_delegation, :delegate]) if enki_config[:open_id_delegation] %>
   <%= yield(:head) %>
 </head>
