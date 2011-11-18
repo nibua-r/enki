@@ -6,11 +6,11 @@ gem 'rails', '3.0.4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 platforms :ruby do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'pg', :require => 'pg'
 end
 
 platforms :jruby do
-  gem 'activerecord-jdbcsqlite3-adapter'
+  gem 'activerecord-jdbcpostgresql-adapter'
   gem 'trinidad'
   gem 'jruby-openssl'
 end
