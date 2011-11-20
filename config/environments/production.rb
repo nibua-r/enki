@@ -46,4 +46,7 @@ Enki::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # Configure Rack::GoogleAnalytics
+  config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-27161746-1")
 end

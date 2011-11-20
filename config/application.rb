@@ -43,10 +43,5 @@ module Enki
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-
-    # Configure Rack::GoogleAnalytics
-    if Rails.env == "production"
-      config.middleware.use "Rack::GoogleAnalytics", :web_property_id => "UA-0000000-1"
-    end
   end
 end
