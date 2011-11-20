@@ -72,6 +72,8 @@ GEM
     pg (0.11.0)
     polyglot (0.3.1)
     rack (1.2.1)
+    rack-google_analytics (1.0.2)
+      rack
     rack-mount (0.6.13)
       rack (>= 1.0.0)
     rack-openid (1.2.0)
@@ -138,6 +140,7 @@ DEPENDENCIES
   lesstile
   nokogiri (~> 1.5.0)
   pg
+  rack-google_analytics
   rack-openid
   rails (= 3.0.4)
   rspec

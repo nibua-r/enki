@@ -15,6 +15,10 @@ platforms :jruby do
   gem 'jruby-openssl'
 end
 
+group :production do
+  gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
